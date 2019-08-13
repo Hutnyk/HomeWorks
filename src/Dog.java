@@ -1,10 +1,18 @@
-public abstract class Dog extends Animal {
+public  class Dog extends Animal {
     private String name;
 
     public String getName() {
         return name;
     }
-    protected void
+    public void voice(){
+     System.out.println("DogVoice");
+    }
+
+    @Override
+    public void feed() {
+        System.out.println("DogFeed");
+    }
+
 
     public void setName(String name) {
         this.name = name;

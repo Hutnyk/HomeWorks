@@ -5,7 +5,7 @@ public abstract class Animal {
         this.name = name;
     }
 
-    protected abstract void voice();
-    protected abstract void feed();
+    public abstract void voice();
+    public abstract void feed();
 }
 

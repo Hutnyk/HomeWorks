@@ -1,11 +1,14 @@
-public abstract  class Cat extends Animal {
+public   class Cat extends Animal {
     private String name;
 
     public Cat(String name, String name1) {
         super(name);
         this.name = name1;
     }
-    protected void
+    @Override
+    public void voice() {
+    System.out.println("CatVoice");
+    }
 
     public String getName() {
         return name;
@@ -17,5 +20,12 @@ public abstract  class Cat extends Animal {
 
     public Cat(String name) {
         super(name);
+    }
+
+
+
+    @Override
+    public void feed() {
+    System.out.println("CatFeed");
     }
 }
